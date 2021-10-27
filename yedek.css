@@ -52,32 +52,39 @@ justify-content: center;
 align-items: center; */
 cursor: pointer;
 }
+.btn-round{
+    width: 65px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+  }
+  .span-4{
+    grid-column: span 4;
+    background-color: black;
+  }
+  .span-2{
+    grid-column: span 2 ;
+    height: 65px;
+    width: 135px;
+    border-radius: 60px;
+    color:white ;
+    cursor: pointer;
+  }
 .orange{
-  background-color: orange;
+  background-color: #ff9834;
 }
 .light-gray{
-  background-color: rgb(164,164,164);
+  background-color: rgba(128, 128, 128, 0.966);
+  color: black;
 }
 .dark-gray{
-  background-color: rgb(54,54,54);
+  background-color: #80808098;
 }
-.span-4{
-  grid-column: span 4;
-  background-color: black;
-}
-.span-2{
-  grid-column: span 2 ;
-}
+
 .output{
   grid-column: 1 / -1;
-}
-.btn-round{
-  width: 75px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  cursor: pointer;
 }
