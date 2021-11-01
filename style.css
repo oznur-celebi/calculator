@@ -14,13 +14,15 @@ body{
 }
  .container{
    display: flex;
-    min-height: 90vh;
+   height: 50vh;
     align-items:center;
     justify-content: center; 
    background-color: hsl(0, 0%, 0%);
     /* background-color:white; */
     min-width: min-content;
     max-width: max-content;
+    margin-top: 10%
+    
 
      
  }
@@ -80,6 +82,7 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: white;
     cursor: pointer;
   }

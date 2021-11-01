@@ -29,7 +29,7 @@ dugme.forEach(element => {
 calculator.addEventListener("click", () => {
     let array = screen.value.split("");
     screen.value = calculate(array);
-    // console.log(array);
+    console.log(array);
     // console.log(array.slice(1,3).join(""));
 
 })
@@ -57,7 +57,7 @@ function calculate(array) {
     if (array.includes("-") == true) {
         i = array.indexOf("-");
         let x = array.slice(0, i).join("");
-        let y = array.slice(i + 1).join("");
+        let y = array.slice(i+1).join("");
         result_displayed = true;
         console.log(result_displayed);
         return sub(parseFloat(x), parseFloat(y));
@@ -67,13 +67,14 @@ function calculate(array) {
         let i = array.indexOf("+");
         let x = array.slice(0, i).join("");
         let y = array.slice(i + 1).join("");
+        console.log(y);
+        console.log(x);
         result_displayed= true;
         console.log(result_displayed);
         return sum(parseFloat(x), parseFloat(y));
     }
 
-    //  result_screened =1;
-    //  console.log(result_screened);
+
 }
 
 function divide(a, b) {
